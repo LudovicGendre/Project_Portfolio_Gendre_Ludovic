@@ -1,0 +1,20 @@
+{
+  "name": "project_portfolio_gendre_ludovic",
+  "version": "1.0.0",
+  "description": "Portfolio Ludovic Gendre",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./sass/main.scss:./css/style.css --style compressed",
+    "prefix": "postcss ./css/style.css --use autoprefixer -d ./css/prefixed/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LudovicGendre/Project_Portfolio_Gendre_Ludovic.git"
+  },
+  "author": "Ludovic Gendre",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LudovicGendre/Project_Portfolio_Gendre_Ludovic/issues"
+  },
+  "homepage": "https://github.com/LudovicGendre/Project_Portfolio_Gendre_Ludovic#readme"
+}
