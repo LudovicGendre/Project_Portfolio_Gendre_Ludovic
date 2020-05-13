@@ -1,0 +1,45 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+  font-family: "Montserrat", sans-serif, serif;
+  scroll-behavior: smooth;
+}
+body {
+  overflow-x: hidden;
+  box-sizing: border-box;
+  margin: 0;
+  background-color: white;
+  box-sizing: border-box;
+  min-height: 200vh;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+  color: #282828;
+}
+body h3 {
+  text-transform: uppercase;
+  font-family: inherit;
+  font-weight: 500;
+  line-height: 1.1;
+  color: inherit;
+  margin: 5px 0 15px;
+}
+body ul,
+body ol {
+  list-style: none;
+  padding: 0;
+}
+body ul li,
+body ol li {
+  display: list-item;
+  text-align: -webkit-match-parent;
+}
+body a {
+  color: inherit;
+}
+body a:link {
+  text-decoration: none;
+}
