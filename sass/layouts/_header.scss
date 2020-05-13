@@ -1,0 +1,104 @@
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 600ms;
+    padding: 20px 100px;
+    background: none;
+    z-index: 100000;
+    margin-bottom: 20px;
+    
+    li {
+       
+        a {
+            position: relative;
+            display: block;
+            padding: 10px 8px;
+            &:hover{
+                transition: ease-in-out cubic-bezier(0.68, -0.55, 0.265, 1.55);
+                color: $first-color;
+            }
+        }
+    }
+
+    .active{
+        border-bottom: 3px solid #FFF;
+    }
+
+    &.sticky {
+        padding: 12px 100px;
+        background: #fff;
+        box-shadow: 0 0 4px rgba(0, 0, 0, .2);
+        li{
+            a{
+                &:hover{
+                    transition: ease-in-out cubic-bezier(0.68, -0.55, 0.265, 1.55);
+                    color: $first-color;
+                }
+            }
+            
+        }
+        .active{
+            border-bottom: 3px solid #000;
+            &:hover{
+                transition: ease-in-out cubic-bezier(0.68, -0.55, 0.265, 1.55);
+                color: $first-color;
+            }
+        }
+
+        .home_logo,
+        ul li a {
+            color: #000;
+        }
+    }
+
+    .home_logo {
+        position: absolute;
+        margin-top: 6px;
+        display: inline-block;
+        white-space: nowrap;
+        transition: 600ms;
+        color: #fff;
+        margin-right: 1rem;
+        text-decoration: none;
+        font-size: 18px;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        line-height: 28px;
+
+       
+
+        svg {
+            display: inline-block;
+            font-size: inherit;
+            text-rendering: auto;
+            height: 14px;
+        }
+    }
+
+    ul {
+        position: relative;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        font-size: 12px;
+
+        li {
+            position: relative;
+            list-style: none;
+
+            a {
+                position: relative;
+                margin: 0 15px;
+                text-decoration: none;
+                color: #fff;
+                letter-spacing: 2px;
+                transition: 600ms;
+            }
+        }
+    }
+}
