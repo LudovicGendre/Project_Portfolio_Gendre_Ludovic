@@ -40,3 +40,6 @@ h5 {
 h6 {
   font-size: 12px;
 }
+strong {
+  font-weight: bold;
+}
