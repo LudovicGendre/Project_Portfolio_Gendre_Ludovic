@@ -316,6 +316,21 @@
                         border-left-width: 0;
                     }
                 }
+                .timeline_date{
+                    position: relative;
+                    text-align: center;
+                    background-color: #fff;
+                    left: 20px;
+                    .timeline_month{
+                        font-size: 18px;
+                        line-height: 20px;
+                        font-weight: 700;
+                        display: block;
+                        color: $first-color;
+                        top: 0;
+                        float: left;
+                    }
+                }
 
             }
         }
