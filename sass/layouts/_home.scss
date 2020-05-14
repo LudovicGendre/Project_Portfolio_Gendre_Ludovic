@@ -299,7 +299,7 @@
                 .timeline_panel{
                     float: left;
                     position: relative;
-                    width: 100%;
+                    width: 43%;
                     .timeline_content{
                         padding: 5px 20px 0 20px;
                     }
@@ -317,10 +317,10 @@
                     }
                 }
                 .timeline_date{
-                    position: relative;
+                    position: absolute;
                     text-align: center;
                     background-color: #fff;
-                    left: 20px;
+                    left: 50%;
                     .timeline_month{
                         font-size: 18px;
                         line-height: 20px;
@@ -332,6 +332,38 @@
                     }
                 }
 
+            }
+            &>li.timeline_inverted {
+                >.timeline_panel{
+                    float: right;
+                    text-align: left;
+                    &:before{
+                        right: auto;
+                        left: -15px;
+                        border-right-width: 15px;
+                        border-left-width: 0;
+                    }
+                    &:after{
+                        right: auto;
+                        left: -14px;
+                        border-right-width: 14px;
+                        border-left-width: 0;
+                    }
+                }
+            }
+            &>li:last-child{
+                margin-bottom: 0;
+            }
+            .timeline_header{
+                h3{
+                    font-size: 20px;
+                    line-height: 28px;
+                }
+                span{
+                    display: block;
+                    font-weight: 700;
+                    margin-bottom: 20px;
+                }
             }
         }
         &:before {
