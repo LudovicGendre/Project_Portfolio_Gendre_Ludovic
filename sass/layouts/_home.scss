@@ -333,8 +333,8 @@
                 }
 
             }
-            &>li.timeline_inverted {
-                >.timeline_panel{
+            .timeline_inverted {
+                .timeline_panel{
                     float: right;
                     text-align: left;
                     &:before{

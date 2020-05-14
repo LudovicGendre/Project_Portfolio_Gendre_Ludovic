@@ -15,7 +15,7 @@
                 width: 120px;
                 margin-left: -60px;
                 margin-top: 28px;
-                .timeline_month{
+                .timeline_month {
                     float: none;
                 }
             }
@@ -88,7 +88,7 @@
                 }
             }
         }
-        & > li.timeline_inverted {
+        .timeline_inverted {
             .timeline_panel {
                 &after {
                     content: "";
@@ -104,16 +104,6 @@
                     -o-transition: all 400ms;
                     transition: all 400ms;
                 }
-                &:hover {
-                    &:before {
-                        border-right: 12px solid $first-color;
-                        border-left: 0;
-                    }
-                    &:after {
-                        border-right: 12px solid $first-color;
-                        border-left: 0;
-                    }
-                }
                 &:before {
                     content: "";
                     top: 25px;
@@ -126,6 +116,40 @@
                     -moz-transition: all 400ms;
                     -o-transition: all 400ms;
                     transition: all 400ms;
+                }
+                &:hover {
+                    &:before {
+                        border-right: 12px solid $first-color;
+                        border-left: 0;
+                    }
+                    &:after {
+                        border-right: 12px solid $first-color;
+                        border-left: 0;
+                    }
+                }
+                .timeline_content {
+                    &:before {
+                        content: "";
+                        top: 25px;
+                        position: absolute;
+                        border-top: 10px solid transparent;
+                        border-bottom: 10px solid transparent;
+                        left: 100%;
+                        border-left: 12px solid #ececec;
+                        -webkit-transition: all 400ms;
+                        -moz-transition: all 400ms;
+                        -o-transition: all 400ms;
+                        transition: all 400ms;
+                    }
+                    &:after {
+                        right: 100%;
+                        margin-right: -2px;
+                        border-right: 12px solid #ffffff;
+                        -webkit-transition: all 400ms;
+                        -moz-transition: all 400ms;
+                        -o-transition: all 400ms;
+                        transition: all 400ms;
+                    }
                 }
             }
         }
