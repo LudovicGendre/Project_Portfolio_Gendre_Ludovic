@@ -17,6 +17,9 @@ body {
   font-size: 14px;
   color: #282828;
 }
+body p {
+  margin: 0 0 10px;
+}
 body h3 {
   text-transform: uppercase;
   font-family: inherit;
