@@ -9,6 +9,16 @@ h5,
 h6 {
   font: 300 46px/1.2 "Montserrat", serif, sans-serif;
 }
+.h4,
+.h5,
+.h6,
+h4,
+h5,
+h6 {
+  margin-top: -30px;
+  margin-bottom: 20px;
+  margin-left: 50px;
+}
 h1 {
   font-size: 64px;
   margin: 5px 0 15px;
