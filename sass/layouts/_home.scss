@@ -218,19 +218,42 @@
         ul {
             margin-top: 10px;
             display: inline-block;
-            li{
+            li {
                 position: relative;
                 font-size: 18px;
                 line-height: 32px;
                 width: 50%;
                 float: left;
-                &::before{
+                &::before {
                     content: "\f00c";
                     font-family: fontawesome;
                     color: #68c3a3;
                     margin-right: 10px;
                 }
             }
+        }
+    }
+}
+
+.scroll_up {
+    position: fixed;
+    z-index: 999;
+    bottom: 1.8em;
+    right: 1.8em;
+
+    a {
+        background-color: #68c3a3;
+        display: block;
+        width: 28px;
+        height: 28px;
+        text-align: center;
+        color: #fff;
+        font-size: 14px;
+        line-height: 28px;
+        &:hover,
+        &::active {
+            background-color: rgba(235, 235, 235, 0.8);
+            color: #222;
         }
     }
 }
