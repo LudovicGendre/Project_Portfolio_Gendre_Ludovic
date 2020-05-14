@@ -321,13 +321,13 @@
                 position: relative;
                 margin-bottom: 50px;
                 min-height: 50px;
-
+                float: left;
                 &:before,
                 &:after {
                     content: " ";
                     display: table;
                 }
-                &:after{
+                &:after {
                     clear: both;
                 }
 
@@ -337,6 +337,53 @@
                     width: 100%;
                     .timeline_content {
                         padding: 5px 20px 0 20px;
+                    }
+                    &:before {
+                        right: auto;
+                        left: -15px;
+                        border-right-width: 15px;
+                        border-left-width: 0;
+                    }
+                    &:after {
+                        right: auto;
+                        left: -14px;
+                        border-right-width: 14px;
+                        border-left-width: 0;
+                    }
+                }
+                .timeline_date {
+                    position: relative;
+                    text-align: center;
+                    background-color: #fff;
+                    left: 20px;
+
+                    .timeline_month {
+                        font-size: 18px;
+                        line-height: 20px;
+                        font-weight: 700;
+                        display: block;
+                        color: $first-color;
+                        top: 0;
+                        float: left;
+                    }
+                }
+            }
+            & > li.timeline_inverted {
+                float: right;
+                text-align: left;
+                    .timeline_panel {
+                   
+                    &::before {
+                        right: auto;
+                        left: -15px;
+                        border-right-width: 15px;
+                        border-left-width: 0;
+                    }
+                    &::after {
+                        right: auto;
+                        left: -14px;
+                        border-right-width: 14px;
+                        border-left-width: 0;
                     }
                 }
             }
