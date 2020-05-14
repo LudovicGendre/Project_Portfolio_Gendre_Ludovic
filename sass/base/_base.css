@@ -41,3 +41,6 @@ body a {
 body a:link {
   text-decoration: none;
 }
+body .section-padding {
+  padding: 120px 0 100px;
+}

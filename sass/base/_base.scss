@@ -2,14 +2,12 @@
     scroll-behavior: smooth;
 }
 
-
-
 body {
     margin: 0;
     padding: 0;
     box-sizing: inherit;
     font-family: "Montserrat", sans-serif, serif;
-    overflow-x:hidden;
+    overflow-x: hidden;
     box-sizing: border-box;
     margin: 0;
     background-color: white;
@@ -26,7 +24,6 @@ body {
         line-height: 1.1;
         color: inherit;
         margin: 5px 0 15px;
-        
     }
     ul,
     ol {
@@ -42,5 +39,9 @@ body {
         &:link {
             text-decoration: none;
         }
+    }
+
+    .section-padding {
+        padding: 120px 0 100px;
     }
 }
