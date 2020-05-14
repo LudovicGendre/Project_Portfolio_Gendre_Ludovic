@@ -275,7 +275,7 @@
             position: relative;
             padding: 0;
             list-style: none;
-            &:before{
+            &:before {
                 content: "";
                 position: absolute;
                 top: 0;
@@ -284,44 +284,44 @@
                 margin-bottom: -1.5px;
                 background-color: #e1e1e1;
             }
-            &>li{
+            & > li {
                 position: relative;
                 margin-bottom: 50px;
                 min-height: 50px;
                 &:before,
-                &:after{
+                &:after {
                     content: "";
                     display: table;
                 }
-                &:after{
+                &:after {
                     clear: both;
                 }
-                .timeline_panel{
+                .timeline_panel {
                     float: left;
                     position: relative;
                     width: 43%;
-                    .timeline_content{
+                    .timeline_content {
                         padding: 5px 20px 0 20px;
                     }
-                    &:before{
+                    &:before {
                         right: auto;
                         left: -15px;
                         border-right-width: 15px;
                         border-left-width: 0;
                     }
-                    &:after{
+                    &:after {
                         right: auto;
                         left: -14px;
                         border-right-width: 14px;
                         border-left-width: 0;
                     }
                 }
-                .timeline_date{
+                .timeline_date {
                     position: absolute;
                     text-align: center;
                     background-color: #fff;
                     left: 50%;
-                    .timeline_month{
+                    .timeline_month {
                         font-size: 18px;
                         line-height: 20px;
                         font-weight: 700;
@@ -331,19 +331,18 @@
                         float: left;
                     }
                 }
-
             }
             .timeline_inverted {
-                .timeline_panel{
+                .timeline_panel {
                     float: right;
                     text-align: left;
-                    &:before{
+                    &:before {
                         right: auto;
                         left: -15px;
                         border-right-width: 15px;
                         border-left-width: 0;
                     }
-                    &:after{
+                    &:after {
                         right: auto;
                         left: -14px;
                         border-right-width: 14px;
@@ -351,15 +350,15 @@
                     }
                 }
             }
-            &>li:last-child{
+            & > li:last-child {
                 margin-bottom: 0;
             }
-            .timeline_header{
-                h3{
+            .timeline_header {
+                h3 {
                     font-size: 20px;
                     line-height: 28px;
                 }
-                span{
+                span {
                     display: block;
                     font-weight: 700;
                     margin-bottom: 20px;
@@ -399,16 +398,84 @@
     }
 }
 
-.skill_section{
+.skill_section {
     background-color: #1a1e23;
-    color: #fff;   
+    color: #fff;
 
-    .section-title{
+    .section-title {
         color: #fff;
         margin-bottom: 110px;
     }
-    .skill_title{
-        width: 25%;
-        float: left;
+    .skill-progress {
+        position: relative;
+        .skill_title {
+            width: 25%;
+            float: left;
+            h3 {
+                font-size: 18px;
+                font-weight: 400;
+                margin-top: -6px;
+                text-transform: capitalize;
+            }
+        }
+        .progress {
+            height: 10px;
+            margin-bottom: 40px;
+            background-color: #3a4149;
+            border-radius: 3px;
+            box-shadow: none;
+            width: 75%;
+            .progress-bar {
+                background-color: #68c3a3;
+                span {
+                    position: absolute;
+                    top: -20px;
+                    right: 15px;
+                }
+                -webkit-transition: width 2s ease-in-out;
+                -moz-transition: width 2s ease-in-out;
+                -o-transition: width 2s ease-in-out;
+                transition: width 2s ease-in-out;
+            }
+        }
+    }
+
+    .skill_chart {
+        margin-top: 20px;
+    }
+
+    .chart {
+        position: relative;
+        display: inline-block;
+        width: 140px;
+        height: 140px;
+        margin: 40px auto;
+        text-align: center;
+        canvas {
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+        .percent {
+            display: inline-block;
+            margin: auto;
+            line-height: 140px;
+            z-index: 2;
+            font-size: 25px;
+            font-weight: 500;
+            text-align: center;
+            &:after {
+                content: "%";
+            }
+        }
+        .char_text {
+            span {
+                font-size: 18px;
+                font-weight: 400;
+                text-transform: capitalize;
+                display: block;
+                margin-top: 20px;
+            }
+        }
     }
 }
