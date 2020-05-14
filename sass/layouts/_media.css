@@ -1,0 +1,40 @@
+@media (min-width: 992px) {
+  .resume_timeline:before {
+    left: 50%;
+  }
+  .resume_timeline > li {
+    margin-bottom: 15px;
+    min-height: 100px;
+  }
+  .resume_timeline > li .timeline_date {
+    position: absolute;
+    text-align: center;
+    background-color: #fff;
+  }
+  .resume_timeline > li .timeline_panel {
+    float: left;
+    width: 43%;
+    text-align: right;
+    border: 1px solid #eee;
+    position: relative;
+  }
+  .resume_timeline > li .timeline_panel .timeline_content {
+    padding: 24px;
+    position: relative;
+    background-color: #fff;
+    -webkit-transition: all 400ms;
+    -moz-transition: all 400ms;
+    -o-transition: all 400ms;
+    transition: all 400ms;
+  }
+  .resume_timeline > li .timeline_panel .timeline_content:after {
+    border: 1px solid #eee;
+    width: 100%;
+    position: absolute;
+    content: "";
+    bottom: -3px;
+    height: 10px;
+    left: 0;
+    z-index: -1;
+  }
+}

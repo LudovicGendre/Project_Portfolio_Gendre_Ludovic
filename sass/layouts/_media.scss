@@ -1,0 +1,133 @@
+@media (min-width: 992px) {
+    .resume_timeline {
+        &:before {
+            left: 50%;
+        }
+        & > li {
+            margin-bottom: 15px;
+            min-height: 100px;
+
+            .timeline_date {
+                position: relative;
+                text-align: center;
+                background-color: #fff;
+                left: 20px;
+                width: 120px;
+                margin-left: -60px;
+                margin-top: 28px;
+                .timeline_month{
+                    float: none;
+                }
+            }
+            .timeline_panel {
+                float: left;
+                width: 100%;
+                text-align: right;
+                border: 1px solid #eee;
+                position: relative;
+
+                &:after {
+                    content: "";
+                    top: 25px;
+                    position: absolute;
+                    border-top: 10px solid transparent;
+                    border-bottom: 10px solid transparent;
+                    left: 100%;
+                    margin-left: -2px;
+                    border-left: 12px solid #ffffff;
+                    -webkit-transition: all 400ms;
+                    -moz-transition: all 400ms;
+                    -o-transition: all 400ms;
+                    transition: all 400ms;
+                }
+
+                &:hover {
+                    &:after {
+                        border-left: 12px solid $first-color;
+                    }
+                }
+
+                .timeline_content {
+                    padding: 24px;
+                    position: relative;
+                    background-color: #fff;
+                    -webkit-transition: all 400ms;
+                    -moz-transition: all 400ms;
+                    -o-transition: all 400ms;
+                    transition: all 400ms;
+                    &:after {
+                        border: 1px solid #eee;
+                        width: 100%;
+                        position: absolute;
+                        content: "";
+                        bottom: -3px;
+                        height: 10px;
+                        left: 0;
+                        z-index: -1;
+                    }
+                    &:hover {
+                        background: $first-color;
+                        color: #fff;
+                        &:before {
+                            border-left: 12px solid $first-color;
+                        }
+                    }
+                    &:before {
+                        content: "";
+                        top: 25px;
+                        position: absolute;
+                        border-top: 10px solid transparent;
+                        border-bottom: 10px solid transparent;
+                        left: 100%;
+                        border-left: 12px solid #ececec;
+                        -webkit-transition: all 400ms;
+                        -moz-transition: all 400ms;
+                        -o-transition: all 400ms;
+                        transition: all 400ms;
+                    }
+                }
+            }
+        }
+        & > li.timeline_inverted {
+            .timeline_panel {
+                &after {
+                    content: "";
+                    top: 25px;
+                    position: absolute;
+                    border-top: 10px solid transparent;
+                    border-bottom: 10px solid transparent;
+                    right: 100%;
+                    margin-right: -2px;
+                    border-right: 12px solid #ffffff;
+                    -webkit-transition: all 400ms;
+                    -moz-transition: all 400ms;
+                    -o-transition: all 400ms;
+                    transition: all 400ms;
+                }
+                &:hover {
+                    &:before {
+                        border-right: 12px solid $first-color;
+                        border-left: 0;
+                    }
+                    &:after {
+                        border-right: 12px solid $first-color;
+                        border-left: 0;
+                    }
+                }
+                &:before {
+                    content: "";
+                    top: 25px;
+                    position: absolute;
+                    border-top: 10px solid transparent;
+                    border-bottom: 10px solid transparent;
+                    right: 100%;
+                    border-right: 12px solid #ececec;
+                    -webkit-transition: all 400ms;
+                    -moz-transition: all 400ms;
+                    -o-transition: all 400ms;
+                    transition: all 400ms;
+                }
+            }
+        }
+    }
+}
