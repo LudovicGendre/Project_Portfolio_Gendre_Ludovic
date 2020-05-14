@@ -232,7 +232,7 @@
   line-height: 28px;
 }
 .scroll_up a:hover,
-.scroll_up a::active {
+.scroll_up a:active {
   background-color: rgba(235, 235, 235, 0.8);
   color: #222;
 }

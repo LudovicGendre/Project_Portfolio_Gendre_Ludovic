@@ -227,7 +227,7 @@
                 &::before {
                     content: "\f00c";
                     font-family: fontawesome;
-                    color: #68c3a3;
+                    color: $first-color;
                     margin-right: 10px;
                 }
             }
@@ -242,7 +242,7 @@
     right: 1.8em;
 
     a {
-        background-color: #68c3a3;
+        background-color: $first-color;
         display: block;
         width: 28px;
         height: 28px;
@@ -251,7 +251,7 @@
         font-size: 14px;
         line-height: 28px;
         &:hover,
-        &::active {
+        &:active {
             background-color: rgba(235, 235, 235, 0.8);
             color: #222;
         }
