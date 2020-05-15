@@ -426,6 +426,7 @@
             box-shadow: none;
             width: 75%;
             .progress-bar {
+                
                 background-color: #68c3a3;
                 span {
                     position: absolute;
@@ -443,20 +444,17 @@
     .skill_chart {
         margin-top: 20px;
     }
-
-    .chart {
+    .more-skill{
+        align-items: center;
+    }
+    .round {
         position: relative;
         display: inline-block;
         width: 140px;
         height: 140px;
         margin: 40px auto;
         text-align: center;
-        canvas {
-            position: absolute;
-            top: 0;
-            left: 0;
-        }
-        .percent {
+        strong {
             display: inline-block;
             margin: auto;
             line-height: 140px;
@@ -464,12 +462,9 @@
             font-size: 25px;
             font-weight: 500;
             text-align: center;
-            &:after {
-                content: "%";
-            }
         }
-        .char_text {
-            span {
+        .round{
+            span{
                 font-size: 18px;
                 font-weight: 400;
                 text-transform: capitalize;

@@ -427,62 +427,56 @@
 
             <div class="row more-skill text_center">
                 <div class="col-xs-12 col-sm-4 col-md-2">
-                    <div class="chart" data-percent="75" data-color="3498db" id="chart">
-                        <span class="percent" id="percent"></span>
-                        <div class="chart_text">
-                            <span>Design logo</span>
-                        </div>
-                        <canvas id="canvas" height="140" width="140" ></canvas>
+                    <div class="round" data-value="0.75" data-size="140" data-thickness="10">
+                        <strong></strong>
+                        <span><i class="fa fa-html5"></i>
+                        HTML5
+                        </span>
                     </div>
                 </div>
 
                 <div class="col-xs-12 col-sm-4 col-md-2">
-                    <div class="chart" data-percent="95" data-color="3498db" id="chart">
-                        <span class="percent" id="test"></span>
-                        <div class="chart_text">
-                            <span>Design logo</span>
-                        </div>
-                        <canvas id="con" height="140" width="140" ></canvas>
+                    <div class="round" data-value="0.75" data-size="140" data-thickness="10">
+                        <strong></strong>
+                        <span><i class="fa fa-html5"></i>
+                        HTML5
+                        </span>
                     </div>
                 </div>
 
                 <div class="col-xs-12 col-sm-4 col-md-2">
-                    <div class="chart" data-percent="95" data-color="3498db" id="chart">
-                        <span class="percent" id="percent"></span>
-                        <div class="chart_text">
-                            <span>Design logo</span>
-                        </div>
-                        <canvas id="canvas" height="140" width="140" ></canvas>
+                    <div class="round" data-value="0.75" data-size="140" data-thickness="10">
+                        <strong></strong>
+                        <span><i class="fa fa-html5"></i>
+                        HTML5
+                        </span>
                     </div>
                 </div>
 
                 <div class="col-xs-12 col-sm-4 col-md-2">
-                    <div class="chart" data-percent="95" data-color="3498db" id="chart">
-                        <span class="percent" id="percent"></span>
-                        <div class="chart_text">
-                            <span>Design logo</span>
-                        </div>
-                        <canvas id="canvas" height="140" width="140" ></canvas>
+                    <div class="round" data-value="0.75" data-size="140" data-thickness="10">
+                        <strong></strong>
+                        <span><i class="fa fa-html5"></i>
+                        HTML5
+                        </span>
                     </div>
                 </div>
 
                 <div class="col-xs-12 col-sm-4 col-md-2">
-                    <div class="chart" data-percent="95" data-color="3498db" id="chart">
-                        <span class="percent" id="percent"></span>
-                        <div class="chart_text">
-                            <span>Design logo</span>
-                        </div>
-                        <canvas id="canvas" height="140" width="140" ></canvas>
+                    <div class="round" data-value="0.75" data-size="140" data-thickness="10">
+                        <strong></strong>
+                        <span><i class="fa fa-html5"></i>
+                        HTML5
+                        </span>
                     </div>
                 </div>
 
                 <div class="col-xs-12 col-sm-4 col-md-2">
-                    <div class="chart" data-percent="95" data-color="3498db" id="chart">
-                        <span class="percent" id="percent"></span>
-                        <div class="chart_text">
-                            <span>Design logo</span>
-                        </div>
-                        <canvas id="canvas" height="140" width="140" ></canvas>
+                    <div class="round" data-value="0.75" data-size="140" data-thickness="10">
+                        <strong></strong>
+                        <span><i class="fa fa-html5"></i>
+                        HTML5
+                        </span>
                     </div>
                 </div>
 
@@ -493,56 +487,25 @@
 
 </body>
 <!-- Script Navbar -->
+<script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-circle-progress/1.2.2/circle-progress.min.js"></script>
+
+<script>
+    function Circlle(el){
+        $(el).circleProgress({fill: {color: '#fff'}})
+        .on('circle-animation-progress', function(event, progress, stepValue) {
+            $(this).find('strong').text(String(stepValue.toFixed(2))+'%');
+        });
+    };
+
+    Circlle('.round');
+</script>
+
 <script type="text/javascript">
     window.addEventListener("scroll", function () {
         var header = document.querySelector("header");
         header.classList.toggle("sticky", window.scrollY > 0);
     })
-</script>
-
-<script type="text/javascript">
-    window.onload = function() {
-  var can = document.getElementById('canvas'),
-      spanProcent = document.getElementById('percent'),
-      divchart = document.getElementById('chart'),
-       c = can.getContext('2d');
- 
-  var posX = can.width / 2,
-        nb = divchart.getAttribute('data-percent'),
-      posY = can.height / 2,
-      fps = 1000 / 200,
-      procent = 0,
-      oneProcent = 360 / 100,
-      result = oneProcent * nb ;
-  c.lineCap = 'round';
-  arcMove();
-  
-  function arcMove(){
-    var deegres = 0;
-    var acrInterval = setInterval (function() {
-      deegres += 1;
-      c.clearRect( 0, 0, can.width, can.height );
-      procent = deegres / oneProcent;
-
-      spanProcent.innerHTML = procent.toFixed();
-
-      c.beginPath();
-      c.arc( posX, posY, 60, (Math.PI/180) * 270, (Math.PI/180) * (270 + 360) );
-      c.strokeStyle = '#3a4149';
-      c.lineWidth = '10';
-      c.stroke();
-
-      c.beginPath();
-      c.strokeStyle = '#68c3a3';
-      c.lineWidth = '10';
-      c.arc( posX, posY, 60, (Math.PI/180) * 270, (Math.PI/180) * (270 + deegres) );
-      c.stroke();
-      if( deegres >= result ) clearInterval(acrInterval);
-    }, fps);
-    
-  }
-}
-
 </script>
 
 <!-- X  -- Script Navbar -- X -->
