@@ -475,12 +475,17 @@
 }
 
 .project_section {
-    img{
+    padding: 120px 0 0 !important;
+    img {
         width: 140%;
-       
     }
-    #test{
-        transform: scaleX(-1);
+    #app_ohmyfood {
+        width: 90%;
     }
+}
 
+.section_dark {
+    padding: 120px 0 120px 0;
+    background: #1a1e23;
+    color: #fff;
 }
