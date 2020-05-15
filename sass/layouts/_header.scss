@@ -11,40 +11,91 @@ header {
     background: none;
     z-index: 100000;
     margin-bottom: 20px;
-    
+    .animation {
+        position: absolute;
+        height: 5px;
+        bottom: 0;
+        z-index: 0;
+        background-color: #3a4149;
+        border-radius: 8px;
+        transition: all .5s ease 0s;
+    }
     li {
-       
+        &:nth-child(1) {
+            width: auto;
+            &:hover ~ .animation {
+                width: 80px;
+                left: 43.3%;
+            }
+        }
+        &:nth-child(2) {
+            width: auto;
+            &:hover ~ .animation {
+                width: 80px;
+                left: 52%;
+            }
+        }
+
+        &:nth-child(3) {
+            width: auto;
+            &:hover ~ .animation {
+                width: 80px;
+                left: 60.5%;
+            }
+        }
+        &:nth-child(4) {
+            width: auto;
+            &:hover ~ .animation {
+                width: 100px;
+                left: 71%;
+            }
+        }
+        &:nth-child(5) {
+            width: auto;
+            &:hover ~ .animation {
+                width: 80px;
+                left: 82.7%;
+            }
+        }
+        &:nth-child(6) {
+            width: auto;
+            &:hover ~ .animation {
+                width: 80px;
+                left: 91.8%;
+            }
+        }
+
         a {
+            z-index: 1;
             position: relative;
             display: block;
             padding: 10px 8px;
-            &:hover{
+            &:hover {
                 transition: ease-in-out cubic-bezier(0.68, -0.55, 0.265, 1.55);
                 color: $first-color;
             }
         }
     }
 
-    .active{
-        border-bottom: 3px solid #FFF;
+    .active {
+        border-bottom: 3px solid #fff;
     }
 
     &.sticky {
         padding: 0;
         background: #fff;
-        box-shadow: 0 0 4px rgba(0, 0, 0, .2);
-        li{
-            a{
-                &:hover{
+        box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
+        li {
+            a {
+                &:hover {
                     transition: ease-in-out cubic-bezier(0.68, -0.55, 0.265, 1.55);
                     color: $first-color;
                 }
             }
-            
         }
-        .active{
+        .active {
             border-bottom: 3px solid #000;
-            &:hover{
+            &:hover {
                 transition: ease-in-out cubic-bezier(0.68, -0.55, 0.265, 1.55);
                 color: $first-color;
             }
@@ -69,8 +120,6 @@ header {
         text-transform: uppercase;
         letter-spacing: 2px;
         line-height: 28px;
-
-       
 
         svg {
             display: inline-block;
