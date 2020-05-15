@@ -33,7 +33,7 @@
                 <li><a href="#about">Profil</a></li>
                 <li><a href="#parcours">Parcours</a></li>
                 <li><a href="#skill">Compétences</a></li>
-                <li><a href="#">Projets </a></li>
+                <li><a href="#project">Projets </a></li>
                 <li><a href="#">Contact </a></li>
             </ul>
         </div>
@@ -436,7 +436,7 @@
                 </div>
 
                 <div class="col-xs-12 col-sm-4 col-md-2">
-                    <div class="round" data-value="0.75" data-size="140" data-thickness="10">
+                    <div class="round" data-value="0.50" data-size="140" data-thickness="10">
                         <strong></strong>
                         <span><i class="fa fa-html5"></i>
                         HTML5
@@ -445,7 +445,7 @@
                 </div>
 
                 <div class="col-xs-12 col-sm-4 col-md-2">
-                    <div class="round" data-value="0.75" data-size="140" data-thickness="10">
+                    <div class="round" data-value="0.35" data-size="140" data-thickness="10">
                         <strong></strong>
                         <span><i class="fa fa-html5"></i>
                         HTML5
@@ -454,7 +454,7 @@
                 </div>
 
                 <div class="col-xs-12 col-sm-4 col-md-2">
-                    <div class="round" data-value="0.75" data-size="140" data-thickness="10">
+                    <div class="round" data-value="1" data-size="140" data-thickness="10">
                         <strong></strong>
                         <span><i class="fa fa-html5"></i>
                         HTML5
@@ -463,7 +463,7 @@
                 </div>
 
                 <div class="col-xs-12 col-sm-4 col-md-2">
-                    <div class="round" data-value="0.75" data-size="140" data-thickness="10">
+                    <div class="round" data-value="0.45" data-size="140" data-thickness="10">
                         <strong></strong>
                         <span><i class="fa fa-html5"></i>
                         HTML5
@@ -472,13 +472,22 @@
                 </div>
 
                 <div class="col-xs-12 col-sm-4 col-md-2">
-                    <div class="round" data-value="0.75" data-size="140" data-thickness="10">
+                    <div class="round" data-value="0.85" data-size="140" data-thickness="10">
                         <strong></strong>
                         <span><i class="fa fa-html5"></i>
                         HTML5
                         </span>
                     </div>
                 </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="project_section section-padding" id="project">
+        <div class="container">
+            <h2 class="section-title">Mes Projets</h2>
+            <div class="row">
 
             </div>
         </div>
@@ -492,9 +501,9 @@
 
 <script>
     function Circlle(el){
-        $(el).circleProgress({fill: {color: '#fff'}})
+        $(el).circleProgress({fill: {color: '#68c3a3'}})
         .on('circle-animation-progress', function(event, progress, stepValue) {
-            $(this).find('strong').text(String(stepValue.toFixed(2))+'%');
+            $(this).find('strong').text(String(stepValue.toFixed(2)*100)+'%');
         });
     };
 
