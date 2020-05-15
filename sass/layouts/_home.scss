@@ -426,7 +426,6 @@
             box-shadow: none;
             width: 75%;
             .progress-bar {
-                
                 background-color: #68c3a3;
                 span {
                     position: absolute;
@@ -444,7 +443,7 @@
     .skill_chart {
         margin-top: 20px;
     }
-    .more-skill{
+    .more-skill {
         align-items: center;
     }
     .round {
@@ -463,8 +462,8 @@
             font-weight: 500;
             text-align: center;
         }
-        .round{
-            span{
+        .round {
+            span {
                 font-size: 18px;
                 font-weight: 400;
                 text-transform: capitalize;
@@ -475,8 +474,13 @@
     }
 }
 
-.project_section{
+.project_section {
     img{
-        width: 170%;
+        width: 140%;
+       
     }
+    #test{
+        transform: scaleX(-1);
+    }
+
 }
