@@ -553,3 +553,13 @@ footer {
     background: #1a1e23;
     color: #fff;
 }
+
+
+@media screen and (max-width: 768px){
+    #home {
+        .slide {
+            height: 90px;
+        }
+    }
+    
+}
