@@ -11,6 +11,21 @@ header {
     background: none;
     z-index: 100000;
     margin-bottom: 20px;
+    nav {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        
+        .burger {
+            display: none;
+            & div{
+                width: 25px;
+                height: 3px;
+                background-color: #fff;
+                margin: 5px;
+            }
+        }
+    }
     .animation {
         position: absolute;
         height: 2px;
@@ -108,8 +123,7 @@ header {
     }
 
     .home_logo {
-        position: absolute;
-        margin-top: 6px;
+        margin-bottom: 16px;
         display: inline-block;
         white-space: nowrap;
         transition: 600ms;
@@ -141,5 +155,11 @@ header {
                 transition: 600ms;
             }
         }
+    }
+}
+
+@media screen and (max-width: 768px){
+    header{
+        display: none;
     }
 }
